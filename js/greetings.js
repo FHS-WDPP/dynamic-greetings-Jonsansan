@@ -36,3 +36,33 @@
         // Optional: Run the function every 30 seconds (or more frequently) to update automatically
         // Note: Students should understand this is for real-time changes
         // setInterval(updateGreeting, 30000); 
+
+
+
+        
+        
+
+
+
+
+
+
+
+// Inject CSS for the slide-rotate-hor-top animation into the document so this file remains valid JavaScript
+;(function() {
+    const css = `.slide-rotate-hor-top {
+        -webkit-animation: slide-rotate-hor-top 0.5s steps(2, end) both;
+        animation: slide-rotate-hor-top 0.5s steps(2, end) both;
+    }`;
+    const styleEl = document.createElement('style');
+    styleEl.type = 'text/css';
+    styleEl.appendChild(document.createTextNode(css));
+    document.head.appendChild(styleEl);
+})();
+
+
+
+
+
+
+
