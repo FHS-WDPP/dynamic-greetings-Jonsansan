@@ -1,0 +1,13 @@
+this for Morning text #FEE2AD
+
+
+
+this effect for text 
+
+.slide-left {
+	-webkit-animation: slide-left 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+sss

@@ -1,44 +1,38 @@
-        /* General Styles that apply to all */
+/** @format */
 
+.cherry-bomb-one-regular {
+  font-family: "Cherry Bomb One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 
+.d-none-1 {
+  background-color: #f08787;
+}
 
-        /* ---------------------------------
+/**
+ * General Styles that apply to all
+ *
+ * @format
+ */
+
+/* ---------------------------------
            1. Morning Theme (5:00 - 11:59)
            --------------------------------- */
-        /* General Morning Styles */
+/* General Morning Styles */
 
+/* Custom Morning Animation: Rises slightly and fades in */
 
-
-        /* Custom Morning Animation: Rises slightly and fades in */
-
-
-
-
-        
-        /* ---------------------------------
+/* ---------------------------------
            2. Afternoon Theme (12:00 - 17:59)
            --------------------------------- */
-        /* General Afternoon Styles */
+/* General Afternoon Styles */
 
+/* Custom Afternoon Animation: Bouncy scaling for energy */
 
-
-        /* Custom Afternoon Animation: Bouncy scaling for energy */
-
-
-
-
-
-
-        /* ---------------------------------
+/* ---------------------------------
            3. Night Theme (18:00 - 4:59)
            --------------------------------- */
-        /* General Night Styles */
+/* General Night Styles */
 
-
-
-        /* Custom Night Animation */
-
-
-
-
- 
+/* Custom Night Animation */
