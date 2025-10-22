@@ -25,3 +25,4 @@ if (h < 12) {
 } else {
   nightDiv.classList.remove("d-none");
 }
+
