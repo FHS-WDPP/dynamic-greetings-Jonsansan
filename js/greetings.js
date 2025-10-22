@@ -5,13 +5,23 @@
  */
 
 const d = new Date();
-
-console.log(d.getHours());
 const h = d.getHours();
+
+// Get all div elements first 
+const morningDiv = document.getElementById("morning-div");
+const afternoonDiv = document.getElementById("afternoon-div");
+const nightDiv = document.getElementById("night-div");
+
+// Hide all divs first 
+morningDiv.classList.add("d-none");
+afternoonDiv.classList.add("d-none");
+nightDiv.classList.add("d-none");
+
+// Show the appropriate div based on time of day :D 
 if (h < 12) {
-  document.body.classList.toggle("morning-div");
+  morningDiv.classList.remove("d-none");
 } else if (h < 18) {
-  document.body.classList.toggle("afternoon-div");
+  afternoonDiv.classList.remove("d-none");
 } else {
-  document.body.classList.toggle("evening-div");
+  nightDiv.classList.remove("d-none");
 }
