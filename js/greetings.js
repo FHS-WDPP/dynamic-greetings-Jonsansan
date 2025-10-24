@@ -1,38 +1,28 @@
-        /**
-         * The core logic function that determines the time of day and updates the display.
-         */
-        function updateGreeting() {
+/**
+ * The core logic function that determines the time of day and updates the display.
+ *
+ * @format
+ */
 
-            // Get references to the three time-of-day element containers
+const d = new Date();
+const h = d.getHours();
 
-            
-            // Get a reference to the body tag for background color changes
+// Get all div elements first 
+const morningDiv = document.getElementById("morning-div");
+const afternoonDiv = document.getElementById("afternoon-div");
+const nightDiv = document.getElementById("night-div");
 
+// Hide all divs first 
+morningDiv.classList.add("d-none");
+afternoonDiv.classList.add("d-none");
+nightDiv.classList.add("d-none");
 
-            // 1. Hide all elements first (ensures only one is shown)
+// Show the appropriate div based on time of day :D 
+if (h < 12) {
+  morningDiv.classList.remove("d-none");
+} else if (h < 18) {
+  afternoonDiv.classList.remove("d-none");
+} else {
+  nightDiv.classList.remove("d-none");
+}
 
-
-            // 2. Conditional Logic: Determine the time frame using if/else statements
-
-            // Morning: 5 AM (inclusive) to 12 PM (exclusive) -> Hours 5 to 11
-
-                // Show Morning
-
-
-            // Afternoon: 12 PM (inclusive) to 6 PM (exclusive) -> Hours 12 to 17
-
-                // Show Afternoon
-
-
-            // Night: 6 PM (inclusive) to 4 AM (inclusive) -> Hours 18 to 4
-
-
-            // Optional: Log the current time for debugging
-
-        }
-
-        // Run the function once when the script loads
-
-        // Optional: Run the function every 30 seconds (or more frequently) to update automatically
-        // Note: Students should understand this is for real-time changes
-        // setInterval(updateGreeting, 30000); 
